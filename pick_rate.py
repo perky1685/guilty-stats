@@ -64,8 +64,45 @@ def print_char_pick_rates(chars, p1char_count, p2char_count):
         p2_percent_char = Decimal(int(p2char_count[x])) / Decimal(int(total_chars)) * Decimal(100)
         print(f"(P1: {p1_percent_char:.2f}%, P2: {p2_percent_char:.2f}%)")
 
-get_p1char_count(chars, p1char_count)
-get_p2char_count(chars, p2char_count)
+def get_floor_pick_rates(floor_num, chars):
+    conn = psycopg2.connect(
+        host="localhost",
+        database="ggst-stats",
+        user="postgres",
+        password="password"
+    )
+
+    cur = conn.cursor()
+    cur.execute(f"SELECT player1_char, player2_char FROM matches WHERE floor = {floor_num}")
+    rows = cur.fetchall()
+
+    p1char_count = np.zeros(len(chars), dtype=np.int64)
+    p2char_count = np.zeros(len(chars), dtype=np.int64)
+
+    for row in rows:
+        p1char_count[row[0]] += 1
+        p2char_count[row[1]] += 1
+
+    total_games = sum(p1char_count)
+
+    results = []
+    for x in range(len(chars)):
+        p1_percent = Decimal(int(p1char_count[x])) / Decimal(int(total_games)) * Decimal(100)
+        p2_percent = Decimal(int(p2char_count[x])) / Decimal(int(total_games)) * Decimal(100)
+        total_percent = p1_percent + p2_percent
+        results.append((chars[x], total_percent, p1_percent, p2_percent))
+
+    print(f"Floor {floor_num} character pick rates:")
+    print_char_pick_rates(chars, p1char_count, p2char_count)
+    
+    return results
+
+#get_p1char_count(chars, p1char_count)
+#get_p2char_count(chars, p2char_count)
 total_games = np.sum(p1char_count)
+
+floor_num = 99
+get_floor_pick_rates(floor_num, chars)
+#results = get_floor_pick_rates(floor_num, chars)
 
 conn.close()
