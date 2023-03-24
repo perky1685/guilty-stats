@@ -21,16 +21,22 @@ def get_win_rate(char_id, floor):
 chars_short = ("SO","KY","MA","AX","CH","PO","FA","MI","ZA","RA","LE","NA","GI","AN","IN","GO","JC","HA","BA","TE","BI","SI")
 chars_long = ("Sol Badguy", "Ky Kiske", "May", "Axl Low", "Chipp", "Potemkin", "Faust", "Millia", "Zato=1", "Ramlethal", "Leo Whitefang", "Nagoriyuki", "Anji Mito", "Ino", "Giovanna", "Jack-O", "Happy Chaos", "Baiken", "Testament", "Brisket", "Sin Kiske")
 
+print("Please enter floor:")
 floor = input()
-#character = chars_long[int(char_id)]
-#win_rate = get_win_rate(char_id)
+print("Please wait up to 15 seconds...")
 
+win_rates = []
 for i in range(len(chars_long)):
     character = chars_long[i]
     char_id = i
     win_rate = get_win_rate(char_id, floor)
-    if floor != "99":
-        print(f"Win rate for {character} on floor {floor}: {win_rate:.2f}%")
-    else:
-        print(f"Win rate for {character} in the Celestial floor: {win_rate:.2f}%")
+    win_rates.append((character, win_rate))
 
+# Sort the win rates in descending order based on the win rate
+sorted_win_rates = sorted(win_rates, key=lambda x: x[1], reverse=True)
+
+for character, win_rate in sorted_win_rates:
+    if floor != "99":
+        print(f"Win rate for {character} on floor {floor}: {round(win_rate, 2)}%")
+    else:
+        print(f"Win rate for {character} in the Celestial floor: {round(win_rate, 2)}%")
