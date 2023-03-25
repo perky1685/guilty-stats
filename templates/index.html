@@ -13,20 +13,34 @@
             <h2>Win rate</h2>
             <table>
                 <thead>
-                  <tr>
-                    <th>Character</th>
-                    <th>Win Rate</th>
-                  </tr>
+                    <tr>
+                        <th>Character</th>
+                        <th>Win Rate (%) </th>
+                        <th>Pick Rate (%) </th>
+                        <th>Raw Count</th>
+                    </tr>
                 </thead>
                 <tbody>
-                  {% for row in win_rate_req %}
+                    {% for row in win_rate_req %}
                     <tr>
-                      <td>{{ row['Character'] }}</td>
-                      <td>{{ row['Win Rate'] }}</td>
+                        <td>{{ row['Character'] }}</td>
+                        <td>{{ row['Win Rate'] }}</td>
+                        {% if pick_rate_req %}
+                            {% for pick_row in pick_rate_req %}
+                                {% if row['Character'] == pick_row['Character'] %}
+                                    <td>{{ pick_row['Total pick rate'] }}</td>
+                                    <td>{{ pick_row['Raw Count'] }}</td>
+                                {% endif %}
+                            {% endfor %}
+                        {% else %}
+                            <td></td>
+                            <td></td>
+                        {% endif %}
                     </tr>
-                  {% endfor %}
+                    {% endfor %}
                 </tbody>
-              </table>
+            </table>
+            
           </div>
         <form method="POST" action="{{ url_for('views.home') }}">
             <label for="floor">Floor:</label>

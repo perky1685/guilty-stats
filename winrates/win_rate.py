@@ -22,21 +22,20 @@ def get_win_rate(char_id, floor):
 chars_short = ("SO","KY","MA","AX","CH","PO","FA","MI","ZA","RA","LE","NA","GI","AN","IN","GO","JC","HA","BA","TE","BI","SI")
 chars_long = ("Sol Badguy", "Ky Kiske", "May", "Axl Low", "Chipp", "Potemkin", "Faust", "Millia", "Zato=1", "Ramlethal", "Leo Whitefang", "Nagoriyuki", "Anji Mito", "Ino", "Giovanna", "Jack-O", "Happy Chaos", "Baiken", "Testament", "Brisket", "Sin Kiske")
 
-floor = 99
+for floor in range(1, 11):
+    win_rates = []
+    for i in range(len(chars_long)):
+        character = chars_long[i]
+        char_id = i
+        win_rate = get_win_rate(char_id, floor)
+        win_rates.append((character, win_rate))
 
-win_rates = []
-for i in range(len(chars_long)):
-    character = chars_long[i]
-    char_id = i
-    win_rate = get_win_rate(char_id, floor)
-    win_rates.append((character, win_rate))
+    # Sort the win rates in descending order based on the win rate
+    sorted_win_rates = sorted(win_rates, key=lambda x: x[1], reverse=True)
 
-# Sort the win rates in descending order based on the win rate
-sorted_win_rates = sorted(win_rates, key=lambda x: x[1], reverse=True)
-
-# Write the win rates to a CSV file
-with open(f"floor{floor}.csv", mode="w", newline="") as file:
-    writer = csv.writer(file)
-    writer.writerow(["Character", "Win Rate"])
-    for character, win_rate in sorted_win_rates:
-        writer.writerow([character, win_rate])
+    # Write the win rates to a CSV file
+    with open(f"floor{floor}.csv", mode="w", newline="") as file:
+        writer = csv.writer(file)
+        writer.writerow(["Character", "Win Rate"])
+        for character, win_rate in sorted_win_rates:
+            writer.writerow([character, (round(win_rate, 2)) / 2])

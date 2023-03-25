@@ -10,9 +10,11 @@ conn = psycopg2.connect(
     password="password"
 )
 
-chars = ("SO","KY","MA","AX","CH","PO","FA","MI","ZA","RA","LE","NA","GI","AN","IN","GO","JC","HA","BA","TE","BI","SI")
-p1char_count = [0] * len(chars)
-p2char_count = [0] * len(chars)
+#chars = ("SO","KY","MA","AX","CH","PO","FA","MI","ZA","RA","LE","NA","GI","AN","IN","GO","JC","HA","BA","TE","BI","SI")
+chars_long = ("Sol Badguy", "Ky Kiske", "May", "Axl Low", "Chipp", "Potemkin", "Faust", "Millia", "Zato=1", "Ramlethal", "Leo Whitefang", "Nagoriyuki", "Anji Mito", "Ino", "Giovanna", "Jack-O", "Happy Chaos", "Baiken", "Testament", "Brisket", "Sin Kiske")
+
+p1char_count = [0] * len(chars_long)
+p2char_count = [0] * len(chars_long)
 
 def get_p1char_count(chars, p1char_count):
     # get every player one character form the database
@@ -65,7 +67,7 @@ def print_char_pick_rates(chars, p1char_count, p2char_count):
         p2_percent_char = Decimal(int(p2char_count[x])) / Decimal(int(total_chars)) * Decimal(100)
         print(f"(P1: {p1_percent_char:.2f}%, P2: {p2_percent_char:.2f}%)")
 
-def get_floor_pick_rates(floor_num, chars):
+def get_floor_pick_rates(floor_num, chars, p1char_count, p2char_count):
     conn = psycopg2.connect(
         host="localhost",
         database="ggst-stats",
@@ -77,33 +79,33 @@ def get_floor_pick_rates(floor_num, chars):
     cur.execute(f"SELECT player1_char, player2_char FROM matches WHERE floor = {floor_num}")
     rows = cur.fetchall()
 
-    p1char_count = np.zeros(len(chars), dtype=np.int64)
-    p2char_count = np.zeros(len(chars), dtype=np.int64)
-
     for row in rows:
-        p1char_count[row[0]] += 1
-        p2char_count[row[1]] += 1
+        p1char_count[row[0]-1] += 1
+        p2char_count[row[1]-1] += 1
 
     total_games = sum(p1char_count)
 
     results = []
     for x in range(len(chars)):
+        cur.execute(f"SELECT COUNT(*) FROM matches WHERE (player1_char = {x} OR player2_char = {x}) AND floor = {floor_num}")
+        total_count = cur.fetchone()[0]
         p1_percent = Decimal(int(p1char_count[x])) / Decimal(int(total_games)) * Decimal(100)
         p2_percent = Decimal(int(p2char_count[x])) / Decimal(int(total_games)) * Decimal(100)
         total_percent = p1_percent + p2_percent
-        results.append((chars[x], total_percent, p1_percent, p2_percent))
+        results.append((chars[x], total_percent, p1_percent, p2_percent, total_count))
 
     print(f"Floor {floor_num} character pick rates:")
     print_char_pick_rates(chars, p1char_count, p2char_count)
     
     # Save results to CSV file
-    with open(f"floor{floor_num}.csv", 'w', newline='') as csvfile:
-        fieldnames = ['Character', 'Total pick rate', 'P1 pick rate', 'P2 pick rate']
+    with open(f"pickrates/floor{floor_num}.csv", 'w', newline='') as csvfile:
+        fieldnames = ['Character', 'Total pick rate', 'P1 pick rate', 'P2 pick rate', 'Raw Count']
         writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
         writer.writeheader()
         for result in results:
-            writer.writerow({'Character': result[0], 'Total pick rate': result[1], 
-                             'P1 pick rate': result[2], 'P2 pick rate': result[3]})
+            writer.writerow({'Character': result[0], 'Total pick rate': round(result[1], 2) / 2, 
+                             'P1 pick rate': round(result[2], 2), 'P2 pick rate': round(result[3], 2),
+                             'Raw Count': result[4]})
     return results
 
 def get_total_char_count(char_index):
@@ -123,8 +125,8 @@ def get_total_char_count(char_index):
 #get_p2char_count(chars, p2char_count)
 total_games = np.sum(p1char_count)
 
-floor_num = 99
-get_floor_pick_rates(floor_num, chars)
+for floor_num in range(1, 11):
+    get_floor_pick_rates(floor_num, chars_long, p1char_count, p2char_count)
 #results = get_floor_pick_rates(floor_num, chars)
 
 conn.close()
