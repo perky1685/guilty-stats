@@ -8,4 +8,4 @@ app.register_blueprint(views, url_prefix="/")
 if __name__ == '__main__':
     app.run(debug=True) 
 
-#one dayyyyyy ill know what thissss meannnnsssssss
+#one dayyyyyy ill know what thissss meannnnssssssss
