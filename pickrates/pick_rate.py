@@ -1,6 +1,7 @@
 import psycopg2
 import numpy as np
 from decimal import Decimal
+import csv
 
 conn = psycopg2.connect(
     host="localhost",
@@ -95,8 +96,29 @@ def get_floor_pick_rates(floor_num, chars):
     print(f"Floor {floor_num} character pick rates:")
     print_char_pick_rates(chars, p1char_count, p2char_count)
     
+    # Save results to CSV file
+    with open(f"floor{floor_num}.csv", 'w', newline='') as csvfile:
+        fieldnames = ['Character', 'Total pick rate', 'P1 pick rate', 'P2 pick rate']
+        writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+        writer.writeheader()
+        for result in results:
+            writer.writerow({'Character': result[0], 'Total pick rate': result[1], 
+                             'P1 pick rate': result[2], 'P2 pick rate': result[3]})
     return results
 
+def get_total_char_count(char_index):
+    conn = psycopg2.connect(
+        host="localhost",
+        database="ggst-stats",
+        user="postgres",
+        password="password"
+    )
+
+    cur = conn.cursor()
+    cur.execute(f"SELECT COUNT(*) FROM match_temp WHERE player1_char = {char_index} OR player2_char = {char_index}")
+    count = cur.fetchone()[0]
+    cur.close()
+    return count
 #get_p1char_count(chars, p1char_count)
 #get_p2char_count(chars, p2char_count)
 total_games = np.sum(p1char_count)

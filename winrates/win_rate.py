@@ -1,3 +1,4 @@
+import csv
 import psycopg2
 
 def get_win_rate(char_id, floor):
@@ -21,9 +22,7 @@ def get_win_rate(char_id, floor):
 chars_short = ("SO","KY","MA","AX","CH","PO","FA","MI","ZA","RA","LE","NA","GI","AN","IN","GO","JC","HA","BA","TE","BI","SI")
 chars_long = ("Sol Badguy", "Ky Kiske", "May", "Axl Low", "Chipp", "Potemkin", "Faust", "Millia", "Zato=1", "Ramlethal", "Leo Whitefang", "Nagoriyuki", "Anji Mito", "Ino", "Giovanna", "Jack-O", "Happy Chaos", "Baiken", "Testament", "Brisket", "Sin Kiske")
 
-print("Please enter floor:")
-floor = input()
-print("Please wait up to 15 seconds...")
+floor = 99
 
 win_rates = []
 for i in range(len(chars_long)):
@@ -35,8 +34,9 @@ for i in range(len(chars_long)):
 # Sort the win rates in descending order based on the win rate
 sorted_win_rates = sorted(win_rates, key=lambda x: x[1], reverse=True)
 
-for character, win_rate in sorted_win_rates:
-    if floor != "99":
-        print(f"Win rate for {character} on floor {floor}: {round(win_rate, 2)}%")
-    else:
-        print(f"Win rate for {character} in the Celestial floor: {round(win_rate, 2)}%")
+# Write the win rates to a CSV file
+with open(f"floor{floor}.csv", mode="w", newline="") as file:
+    writer = csv.writer(file)
+    writer.writerow(["Character", "Win Rate"])
+    for character, win_rate in sorted_win_rates:
+        writer.writerow([character, win_rate])

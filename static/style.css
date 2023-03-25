@@ -1,0 +1,6 @@
+.container {
+    display: flex;
+}
+.list-container {
+    flex: 1;
+}
