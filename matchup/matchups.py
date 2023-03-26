@@ -43,7 +43,7 @@ def write_all_matchups():
             player1_char, 
             player2_char
     """
-
+    chars_long = ("Sol Badguy", "Ky Kiske", "May", "Axl Low", "Chipp", "Potemkin", "Faust", "Millia", "Zato=1", "Ramlethal", "Leo Whitefang", "Nagoriyuki", "Anji Mito", "Ino", "Giovanna", "Jack-O", "Happy Chaos", "Baiken", "Testament", "Brisket", "Sin Kiske")
     # Execute the query and fetch the results
     with conn.cursor() as cur:
         cur.execute(query)
@@ -72,10 +72,10 @@ def write_all_matchups():
                     score = "-1"
                 else:
                     score = "0"
-            writer.writerow([player1_char, player2_char, num_matches, player1_win_rate, player2_win_rate, score])
-
-import psycopg2
-import csv
+                try:
+                    writer.writerow([chars_long[player1_char], chars_long[player2_char], num_matches, player1_win_rate, player2_win_rate, score])
+                except:
+                    pass
 
 def matchup_by_floor(floor):
     conn = psycopg2.connect(
@@ -125,6 +125,7 @@ def matchup_by_floor(floor):
         player2_char, 
         floor 
         """
+    chars_long = ("Sol Badguy", "Ky Kiske", "May", "Axl Low", "Chipp", "Potemkin", "Faust", "Millia", "Zato=1", "Ramlethal", "Leo Whitefang", "Nagoriyuki", "Anji Mito", "Ino", "Giovanna", "Jack-O", "Happy Chaos", "Baiken", "Testament", "Brisket", "Sin Kiske")
 
     # Execute the query and fetch the results
     with conn.cursor() as cur:
@@ -155,12 +156,16 @@ def matchup_by_floor(floor):
                         score = "-1"
                     else:
                         score = "0"
-                writer.writerow([player1_char, player2_char, num_matches, player1_win_rate, player2_win_rate, score])
+                    try:
+                        writer.writerow([chars_long[player1_char], chars_long[player2_char], num_matches, player1_win_rate, player2_win_rate, score])
+                    except:
+                        pass
 
 # Prompt user for the floor number to filter by
 #floor = input("What floor would you like to get the matchups of? ")
 
-# Call the function with the provided floor number
-for x in range (1, 11):
-    matchup_by_floor(x)
-matchup_by_floor(99)
+#### Call the function with the provided floor number
+#for x in range (1, 11):
+#    matchup_by_floor(x)
+#matchup_by_floor(99)
+write_all_matchups()

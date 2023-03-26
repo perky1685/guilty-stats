@@ -9,40 +9,37 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.11.3/datatables.min.css"/>
     <script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.11.3/datatables.min.js"></script>
-
 </head>
 <body>
+    {% include "includes/navbar.html" %}
     <div class="container">
         <div class="list-container">
-            <table class = "sortable" id = "myTable">
+            <table class="sortable" id="myTable">
                 <thead>
-                    <tr>
-                        <th>Character</th>
-                        <th>Win Rate (%) </th>
-                        <th>Pick Rate (%) </th>
-                        <th>Raw Count</th>
-                    </tr>
+                  <tr>
+                    <th>Character</th>
+                    <th>Win Rate (%)</th>
+                    <th>Pick Rate (%)</th>
+                    <th>Raw Count</th>
+                  </tr>
                 </thead>
                 <tbody>
-                    {% for row in win_rate_req %}
-                    <tr>
-                        <td>{{ row['Character'] }}</td>
-                        <td>{{ row['Win Rate'] }}</td>
-                        {% if pick_rate_req %}
-                            {% for pick_row in pick_rate_req %}
-                                {% if row['Character'] == pick_row['Character'] %}
-                                    <td>{{ pick_row['Total pick rate'] }}</td>
-                                    <td>{{ pick_row['Raw Count'] }}</td>
-                                {% endif %}
-                            {% endfor %}
-                        {% else %}
-                            <td></td>
-                            <td></td>
+                  {% for row in win_rate_req %}
+                  <tr>
+                    <td>{{ row['Character'] }}</td>
+                    <td>{{ row['Win Rate'] }}</td>
+                    {% if pick_rate_req %}
+                      {% for pick_row in pick_rate_req %}
+                        {% if row['Character'] == pick_row['Character'] %}
+                          <td>{{ pick_row['Total pick rate'] }}</td>
+                          <td>{{ pick_row['Raw Count'] }}</td>
                         {% endif %}
-                    </tr>
-                    {% endfor %}
+                      {% endfor %}
+                    {% endif %}
+                  </tr>
+                  {% endfor %}
                 </tbody>
-            </table>
+              </table>
           </div>
         <form method="POST" action="{{ url_for('views.home') }}">
             <label for="floor">Floor:</label>
@@ -69,43 +66,6 @@
             });
         });
     </script>
-    <footer>
-        <a href = "https://cyber.dabamos.de/88x31/index.html">
-            <img src="/static/images/queer.png" title = "impossible.">
-        </a>
-        <a href = "https://plasticdino.neocities.org/buttons">
-            <img src="/static/images/kuromi virus.gif" title = "kuromi <3">
-        </a>
-        <a href = "https://zanarkand.neocities.org/summermemory">
-            <img src = "static/images/panty.png" title = "panty <3">
-        </a>
-        <a href = "https://cyber.dabamos.de/88x31/index.html">
-            <img src = "/static/images/miku.gif" title = "miku <3">
-        </a>
-        <a href = "https://cyber.dabamos.de/88x31/index.html">
-            <img src = "/static/images/jirachi.gif" title = "jirachi <3">
-        </a>
-        <a href = "https://cyber.dabamos.de/88x31/index.html">
-            <img src = "/static/images/sheher.png" title = "she/her">
-        </a>
-        <a href = "https://koinuko.pink/mygraphics/buttons">
-            <img src = "/static/images/design.png" title = "i AM design">
-        </a>
-        <a href = "https://cyber.dabamos.de/88x31/index.html">
-            <img src = "/static/images/demon.gif" title = "i am evil">
-        </a>
-        <a href = "https://cyber.dabamos.de/88x31/index.html">
-            <img src = "/static/images/transnow.gif" title = "NOW">
-        </a>
-        <a href = "https://plasticdino.neocities.org/buttons">
-            <img src = "/static/images/thirdimpact.png" title = "soon">
-        </a>
-        <a href = "https://plasticdino.neocities.org/buttons">
-            <img src = "/static/images/lain green.gif" title = "https://youtu.be/mk1KA4A0sr4">
-        </a>
-        <a href = "https://plasticdino.neocities.org/buttons">
-            <img src = "/static/images/rollinggirl.gif" title = "mou ikkai">
-        </a>
-    </footer>
+    {% include "includes/footer.html" %}
 </body>
 </html>

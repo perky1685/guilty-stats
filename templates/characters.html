@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.11.3/datatables.min.css"/>
+        <script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.11.3/datatables.min.js"></script>
+    </head>
+<body>
+    {% include "includes/navbar.html" %}
+    <form method="POST" action="{{ url_for('views.home') }}">
+        <label for="char">Character:</label>
+        <select name="char" id="char">
+            <label><option value="0">SO</option></label>
+            <label><option value="1">KY</option></label>
+            <label><option value="2">MA</option></label>
+            <label><option value="3">AX</option></label>
+            <label><option value="4">CH</option></label>
+            <label><option value="5">PO</option></label>
+            <label><option value="6">FA</option></label>
+            <label><option value="7">MI</option></label>
+            <label><option value="8">ZA</option></label>
+            <label><option value="9">RA</option></label>
+            <label><option value="10">LE</option></label>
+            <label><option value="11">NA</option></label>
+            <label><option value="12">GI</option></label>
+            <label><option value="13">AN</option></label>
+            <label><option value="14">IN</option></label>
+            <label><option value="15">GO</option></label>
+            <label><option value="16">JC</option></label>
+            <label><option value="17">HA</option></label>
+            <label><option value="18">BA</option></label>
+            <label><option value="19">TE</option></label>
+            <label><option value="20">BI</option></label>
+            <label><option value="21">SI</option></label>
+        </select>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+{% include "includes/footer.html" %}
+</html>

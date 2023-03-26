@@ -11,3 +11,9 @@ def get_pick_rates(floor):
         reader = csv.DictReader(f)
         data = [row for row in reader]
     return data
+
+def get_matchups(floor):
+    with open(f'matchup/floor{floor}.csv', newline='') as f:
+        reader = csv.DictReader(f)
+        data = [row for row in reader]
+    return data
