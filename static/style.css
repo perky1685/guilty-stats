@@ -4,3 +4,33 @@
 .list-container {
     flex: 1;
 }
+#myTable tbody tr {
+    background-color: #7a35b0;
+    padding: 8px;
+}
+#myTable thead tr {
+    background-color: #5b2884;
+    padding: 8px;
+}
+#myTable_wrapper .dataTables_filter input {
+    background-color: white;
+}
+#myTable tbody td {
+    border-bottom: 1px solid #1e0d2c;
+}
+#myTable tbody td {
+    width: 25%;
+}
+body {
+    background-color: #9754cb;
+}
+.win-rate.mid {
+    color: black;
+}
+.win-rate.high {
+    color: green;
+}
+
+.win-rate.low {
+    color: red;
+}

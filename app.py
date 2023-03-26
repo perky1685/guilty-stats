@@ -9,3 +9,4 @@ if __name__ == '__main__':
     app.run(debug=True) 
 
 #one dayyyyyy ill know what thissss meannnnssssssss
+#you will rel ill make sure of it

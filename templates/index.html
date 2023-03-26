@@ -6,12 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.11.3/datatables.min.css"/>
+    <script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.11.3/datatables.min.js"></script>
+
 </head>
 <body>
     <div class="container">
         <div class="list-container">
-            <h2>Win rate</h2>
-            <table>
+            <table class = "sortable" id = "myTable">
                 <thead>
                     <tr>
                         <th>Character</th>
@@ -40,7 +43,6 @@
                     {% endfor %}
                 </tbody>
             </table>
-            
           </div>
         <form method="POST" action="{{ url_for('views.home') }}">
             <label for="floor">Floor:</label>
@@ -59,7 +61,51 @@
             </select>
             <input type="submit" value="Submit">
         </form>
-        
     </div>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#myTable').DataTable({
+                "paging": false
+            });
+        });
+    </script>
+    <footer>
+        <a href = "https://cyber.dabamos.de/88x31/index.html">
+            <img src="/static/images/queer.png" title = "impossible.">
+        </a>
+        <a href = "https://plasticdino.neocities.org/buttons">
+            <img src="/static/images/kuromi virus.gif" title = "kuromi <3">
+        </a>
+        <a href = "https://zanarkand.neocities.org/summermemory">
+            <img src = "static/images/panty.png" title = "panty <3">
+        </a>
+        <a href = "https://cyber.dabamos.de/88x31/index.html">
+            <img src = "/static/images/miku.gif" title = "miku <3">
+        </a>
+        <a href = "https://cyber.dabamos.de/88x31/index.html">
+            <img src = "/static/images/jirachi.gif" title = "jirachi <3">
+        </a>
+        <a href = "https://cyber.dabamos.de/88x31/index.html">
+            <img src = "/static/images/sheher.png" title = "she/her">
+        </a>
+        <a href = "https://koinuko.pink/mygraphics/buttons">
+            <img src = "/static/images/design.png" title = "i AM design">
+        </a>
+        <a href = "https://cyber.dabamos.de/88x31/index.html">
+            <img src = "/static/images/demon.gif" title = "i am evil">
+        </a>
+        <a href = "https://cyber.dabamos.de/88x31/index.html">
+            <img src = "/static/images/transnow.gif" title = "NOW">
+        </a>
+        <a href = "https://plasticdino.neocities.org/buttons">
+            <img src = "/static/images/thirdimpact.png" title = "soon">
+        </a>
+        <a href = "https://plasticdino.neocities.org/buttons">
+            <img src = "/static/images/lain green.gif" title = "https://youtu.be/mk1KA4A0sr4">
+        </a>
+        <a href = "https://plasticdino.neocities.org/buttons">
+            <img src = "/static/images/rollinggirl.gif" title = "mou ikkai">
+        </a>
+    </footer>
 </body>
 </html>
