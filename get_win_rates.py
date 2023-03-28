@@ -17,3 +17,9 @@ def get_matchups(floor):
         reader = csv.DictReader(f)
         data = [row for row in reader]
     return data
+
+def get_all_matchups(char):
+    with open(f'matchup/allfloors.csv', newline='') as f:
+        reader = csv.DictReader(f)
+        data = [row for row in reader if row['Character 1'] == char]
+    return data

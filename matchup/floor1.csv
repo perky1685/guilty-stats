@@ -1,315 +1,336 @@
 Character 1,Character 2,Floor,Num Matches,Player 1 Win Rate,Player 2 Win Rate,Score
-Sol Badguy,Ky Kiske,10,40.00,60.00,-3
-Sol Badguy,May,11,9.09,90.91,-3
-Sol Badguy,Axl Low,6,0.00,100.00,-3
-Sol Badguy,Chipp,11,63.64,36.36,+3
-Sol Badguy,Potemkin,5,40.00,60.00,-3
-Sol Badguy,Faust,17,23.53,76.47,-3
-Sol Badguy,Millia,7,28.57,71.43,-3
-Sol Badguy,Zato=1,3,0.00,100.00,-3
-Sol Badguy,Ramlethal,15,40.00,60.00,-3
-Sol Badguy,Nagoriyuki,12,33.33,66.67,-3
-Sol Badguy,Anji Mito,16,87.50,12.50,+3
-Sol Badguy,Ino,3,66.67,33.33,+3
-Sol Badguy,Happy Chaos,2,100.00,0.00,+3
-Sol Badguy,Baiken,3,66.67,33.33,+3
-Sol Badguy,Testament,9,44.44,55.56,-3
-Sol Badguy,Sin Kiske,6,33.33,66.67,-3
-Ky Kiske,Sol Badguy,4,50.00,50.00,0
-Ky Kiske,May,6,66.67,33.33,+3
-Ky Kiske,Axl Low,6,83.33,16.67,+3
-Ky Kiske,Chipp,10,100.00,0.00,+3
-Ky Kiske,Potemkin,1,100.00,0.00,+3
-Ky Kiske,Faust,6,16.67,83.33,-3
-Ky Kiske,Millia,16,75.00,25.00,+3
-Ky Kiske,Zato=1,13,61.54,38.46,+3
-Ky Kiske,Ramlethal,17,58.82,41.18,+3
-Ky Kiske,Nagoriyuki,6,33.33,66.67,-3
-Ky Kiske,Anji Mito,10,40.00,60.00,-3
-Ky Kiske,Giovanna,6,83.33,16.67,+3
-Ky Kiske,Happy Chaos,1,100.00,0.00,+3
-Ky Kiske,Baiken,11,72.73,27.27,+3
-Ky Kiske,Sin Kiske,11,72.73,27.27,+3
-May,Sol Badguy,8,75.00,25.00,+3
-May,Ky Kiske,16,43.75,56.25,-3
-May,Axl Low,3,66.67,33.33,+3
-May,Chipp,4,50.00,50.00,0
-May,Potemkin,4,25.00,75.00,-3
-May,Faust,8,62.50,37.50,+3
-May,Millia,9,66.67,33.33,+3
-May,Ramlethal,20,75.00,25.00,+3
-May,Nagoriyuki,3,0.00,100.00,-3
-May,Anji Mito,3,66.67,33.33,+3
-May,Giovanna,4,75.00,25.00,+3
-May,Baiken,15,73.33,26.67,+3
-May,Testament,3,33.33,66.67,-3
-May,Brisket,1,0.00,100.00,-3
-May,Sin Kiske,10,70.00,30.00,+3
-Axl Low,Sol Badguy,6,16.67,83.33,-3
-Axl Low,Ky Kiske,3,0.00,100.00,-3
-Axl Low,May,3,100.00,0.00,+3
-Axl Low,Chipp,19,68.42,31.58,+3
-Axl Low,Potemkin,2,100.00,0.00,+3
-Axl Low,Faust,7,85.71,14.29,+3
-Axl Low,Millia,7,42.86,57.14,-3
-Axl Low,Zato=1,13,46.15,53.85,-2
-Axl Low,Ramlethal,19,68.42,31.58,+3
-Axl Low,Nagoriyuki,3,66.67,33.33,+3
-Axl Low,Anji Mito,3,0.00,100.00,-3
-Axl Low,Ino,1,100.00,0.00,+3
-Axl Low,Giovanna,2,0.00,100.00,-3
-Axl Low,Happy Chaos,1,100.00,0.00,+3
-Axl Low,Testament,3,100.00,0.00,+3
-Axl Low,Brisket,6,50.00,50.00,0
-Axl Low,Sin Kiske,3,0.00,100.00,-3
-Chipp,Sol Badguy,11,18.18,81.82,-3
-Chipp,Ky Kiske,14,50.00,50.00,0
-Chipp,May,13,0.00,100.00,-3
-Chipp,Axl Low,3,0.00,100.00,-3
-Chipp,Potemkin,5,60.00,40.00,+3
-Chipp,Faust,4,50.00,50.00,0
-Chipp,Millia,23,52.17,47.83,+1
-Chipp,Zato=1,7,71.43,28.57,+3
-Chipp,Ramlethal,19,21.05,78.95,-3
-Chipp,Leo Whitefang,8,75.00,25.00,+3
-Chipp,Nagoriyuki,17,11.76,88.24,-3
-Chipp,Anji Mito,25,20.00,80.00,-3
-Chipp,Ino,3,33.33,66.67,-3
-Chipp,Giovanna,10,50.00,50.00,0
-Chipp,Happy Chaos,1,100.00,0.00,+3
-Chipp,Baiken,10,60.00,40.00,+3
-Chipp,Testament,3,100.00,0.00,+3
-Chipp,Brisket,6,50.00,50.00,0
-Chipp,Sin Kiske,20,20.00,80.00,-3
-Potemkin,Sol Badguy,6,100.00,0.00,+3
-Potemkin,Ky Kiske,3,66.67,33.33,+3
-Potemkin,Chipp,12,25.00,75.00,-3
-Potemkin,Millia,2,100.00,0.00,+3
-Potemkin,Zato=1,4,100.00,0.00,+3
-Potemkin,Ramlethal,10,60.00,40.00,+3
-Potemkin,Leo Whitefang,4,50.00,50.00,0
-Potemkin,Nagoriyuki,3,33.33,66.67,-3
-Potemkin,Anji Mito,2,0.00,100.00,-3
-Potemkin,Happy Chaos,3,33.33,66.67,-3
-Potemkin,Baiken,3,66.67,33.33,+3
-Potemkin,Sin Kiske,2,0.00,100.00,-3
-Faust,Sol Badguy,6,33.33,66.67,-3
-Faust,Ky Kiske,10,70.00,30.00,+3
-Faust,Axl Low,2,100.00,0.00,+3
-Faust,Millia,4,50.00,50.00,0
-Faust,Zato=1,16,50.00,50.00,0
-Faust,Ramlethal,22,40.91,59.09,-3
-Faust,Nagoriyuki,3,33.33,66.67,-3
-Faust,Anji Mito,2,100.00,0.00,+3
-Faust,Ino,10,90.00,10.00,+3
-Faust,Giovanna,5,40.00,60.00,-3
-Faust,Baiken,2,100.00,0.00,+3
-Faust,Brisket,2,100.00,0.00,+3
-Faust,Sin Kiske,3,66.67,33.33,+3
-Millia,Sol Badguy,1,100.00,0.00,+3
-Millia,May,22,45.45,54.55,-2
-Millia,Axl Low,20,45.00,55.00,-2
-Millia,Chipp,27,40.74,59.26,-3
-Millia,Potemkin,10,60.00,40.00,+3
-Millia,Faust,9,0.00,100.00,-3
-Millia,Zato=1,6,33.33,66.67,-3
-Millia,Ramlethal,30,20.00,80.00,-3
-Millia,Leo Whitefang,3,33.33,66.67,-3
-Millia,Nagoriyuki,5,0.00,100.00,-3
-Millia,Anji Mito,8,62.50,37.50,+3
-Millia,Ino,7,14.29,85.71,-3
-Millia,Giovanna,11,27.27,72.73,-3
-Millia,Jack-O,3,33.33,66.67,-3
-Millia,Happy Chaos,13,53.85,46.15,+2
-Millia,Baiken,10,70.00,30.00,+3
-Millia,Testament,6,33.33,66.67,-3
-Millia,Brisket,5,20.00,80.00,-3
-Millia,Sin Kiske,6,50.00,50.00,0
-Zato=1,Sol Badguy,3,100.00,0.00,+3
-Zato=1,Ky Kiske,8,87.50,12.50,+3
-Zato=1,May,3,66.67,33.33,+3
-Zato=1,Axl Low,6,16.67,83.33,-3
-Zato=1,Chipp,13,46.15,53.85,-2
-Zato=1,Faust,5,60.00,40.00,+3
-Zato=1,Millia,2,100.00,0.00,+3
-Zato=1,Ramlethal,11,36.36,63.64,-3
-Zato=1,Nagoriyuki,12,25.00,75.00,-3
-Zato=1,Anji Mito,13,23.08,76.92,-3
-Zato=1,Ino,3,0.00,100.00,-3
-Zato=1,Giovanna,2,100.00,0.00,+3
-Zato=1,Happy Chaos,6,33.33,66.67,-3
-Zato=1,Baiken,3,100.00,0.00,+3
-Zato=1,Testament,1,100.00,0.00,+3
-Zato=1,Brisket,3,33.33,66.67,-3
-Zato=1,Sin Kiske,1,100.00,0.00,+3
-Ramlethal,Sol Badguy,11,36.36,63.64,-3
-Ramlethal,Ky Kiske,12,83.33,16.67,+3
-Ramlethal,May,12,25.00,75.00,-3
-Ramlethal,Axl Low,5,80.00,20.00,+3
-Ramlethal,Chipp,11,90.91,9.09,+3
-Ramlethal,Potemkin,8,25.00,75.00,-3
-Ramlethal,Faust,35,57.14,42.86,+3
-Ramlethal,Millia,12,41.67,58.33,-3
-Ramlethal,Zato=1,17,58.82,41.18,+3
-Ramlethal,Leo Whitefang,11,63.64,36.36,+3
-Ramlethal,Nagoriyuki,10,70.00,30.00,+3
-Ramlethal,Anji Mito,17,70.59,29.41,+3
-Ramlethal,Ino,8,25.00,75.00,-3
-Ramlethal,Giovanna,17,47.06,52.94,-2
-Ramlethal,Happy Chaos,4,50.00,50.00,0
-Ramlethal,Baiken,9,66.67,33.33,+3
-Ramlethal,Testament,2,0.00,100.00,-3
-Ramlethal,Brisket,8,62.50,37.50,+3
-Ramlethal,Sin Kiske,30,60.00,40.00,+3
-Leo Whitefang,Ky Kiske,3,33.33,66.67,-3
-Leo Whitefang,May,8,12.50,87.50,-3
-Leo Whitefang,Axl Low,6,0.00,100.00,-3
-Leo Whitefang,Chipp,6,50.00,50.00,0
-Leo Whitefang,Potemkin,2,50.00,50.00,0
-Leo Whitefang,Faust,1,100.00,0.00,+3
-Leo Whitefang,Millia,5,80.00,20.00,+3
-Leo Whitefang,Zato=1,4,25.00,75.00,-3
-Leo Whitefang,Ramlethal,4,50.00,50.00,0
-Leo Whitefang,Nagoriyuki,6,16.67,83.33,-3
-Leo Whitefang,Anji Mito,18,38.89,61.11,-3
-Leo Whitefang,Ino,2,100.00,0.00,+3
-Leo Whitefang,Giovanna,2,50.00,50.00,0
-Leo Whitefang,Baiken,6,66.67,33.33,+3
-Leo Whitefang,Sin Kiske,7,28.57,71.43,-3
-Nagoriyuki,Sol Badguy,14,14.29,85.71,-3
-Nagoriyuki,Ky Kiske,9,11.11,88.89,-3
-Nagoriyuki,Axl Low,3,100.00,0.00,+3
-Nagoriyuki,Chipp,22,86.36,13.64,+3
-Nagoriyuki,Faust,5,60.00,40.00,+3
-Nagoriyuki,Millia,7,57.14,42.86,+3
-Nagoriyuki,Zato=1,5,100.00,0.00,+3
-Nagoriyuki,Ramlethal,34,67.65,32.35,+3
-Nagoriyuki,Leo Whitefang,10,40.00,60.00,-3
-Nagoriyuki,Anji Mito,30,73.33,26.67,+3
-Nagoriyuki,Ino,1,100.00,0.00,+3
-Nagoriyuki,Giovanna,16,68.75,31.25,+3
-Nagoriyuki,Happy Chaos,3,0.00,100.00,-3
-Nagoriyuki,Baiken,3,100.00,0.00,+3
-Nagoriyuki,Testament,6,50.00,50.00,0
-Nagoriyuki,Brisket,4,25.00,75.00,-3
-Nagoriyuki,Sin Kiske,20,65.00,35.00,+3
-Anji Mito,Sol Badguy,28,25.00,75.00,-3
-Anji Mito,Ky Kiske,7,42.86,57.14,-3
-Anji Mito,May,14,57.14,42.86,+3
-Anji Mito,Axl Low,9,55.56,44.44,+3
-Anji Mito,Chipp,20,55.00,45.00,+2
-Anji Mito,Potemkin,8,37.50,62.50,-3
-Anji Mito,Faust,9,44.44,55.56,-3
-Anji Mito,Millia,14,100.00,0.00,+3
-Anji Mito,Zato=1,23,43.48,56.52,-3
-Anji Mito,Ramlethal,45,64.44,35.56,+3
-Anji Mito,Leo Whitefang,9,77.78,22.22,+3
-Anji Mito,Nagoriyuki,36,38.89,61.11,-3
-Anji Mito,Ino,1,100.00,0.00,+3
-Anji Mito,Giovanna,3,33.33,66.67,-3
-Anji Mito,Baiken,6,100.00,0.00,+3
-Anji Mito,Testament,18,44.44,55.56,-3
-Anji Mito,Brisket,13,76.92,23.08,+3
-Anji Mito,Sin Kiske,20,45.00,55.00,-2
-Ino,Sol Badguy,3,0.00,100.00,-3
-Ino,Ky Kiske,3,0.00,100.00,-3
-Ino,May,1,0.00,100.00,-3
-Ino,Axl Low,6,66.67,33.33,+3
-Ino,Chipp,17,70.59,29.41,+3
-Ino,Faust,3,0.00,100.00,-3
-Ino,Millia,1,100.00,0.00,+3
-Ino,Zato=1,4,100.00,0.00,+3
-Ino,Leo Whitefang,2,50.00,50.00,0
-Ino,Nagoriyuki,9,0.00,100.00,-3
-Ino,Anji Mito,2,0.00,100.00,-3
-Ino,Giovanna,5,20.00,80.00,-3
-Ino,Happy Chaos,3,0.00,100.00,-3
-Ino,Baiken,4,50.00,50.00,0
-Giovanna,Sol Badguy,3,66.67,33.33,+3
-Giovanna,May,20,45.00,55.00,-2
-Giovanna,Axl Low,6,66.67,33.33,+3
-Giovanna,Chipp,9,77.78,22.22,+3
-Giovanna,Potemkin,1,0.00,100.00,-3
-Giovanna,Faust,4,75.00,25.00,+3
-Giovanna,Millia,3,100.00,0.00,+3
-Giovanna,Zato=1,4,50.00,50.00,0
-Giovanna,Ramlethal,19,47.37,52.63,-2
-Giovanna,Leo Whitefang,5,40.00,60.00,-3
-Giovanna,Anji Mito,18,50.00,50.00,0
-Giovanna,Ino,6,66.67,33.33,+3
-Giovanna,Happy Chaos,3,100.00,0.00,+3
-Giovanna,Baiken,9,22.22,77.78,-3
-Giovanna,Brisket,4,50.00,50.00,0
-Giovanna,Sin Kiske,4,50.00,50.00,0
-Jack-O,Chipp,2,100.00,0.00,+3
-Jack-O,Millia,5,100.00,0.00,+3
-Jack-O,Anji Mito,3,33.33,66.67,-3
-Happy Chaos,Sol Badguy,6,66.67,33.33,+3
-Happy Chaos,Ky Kiske,11,72.73,27.27,+3
-Happy Chaos,May,3,0.00,100.00,-3
-Happy Chaos,Axl Low,3,33.33,66.67,-3
-Happy Chaos,Chipp,6,50.00,50.00,0
-Happy Chaos,Potemkin,3,100.00,0.00,+3
-Happy Chaos,Faust,3,33.33,66.67,-3
-Happy Chaos,Millia,3,100.00,0.00,+3
-Happy Chaos,Zato=1,1,100.00,0.00,+3
-Happy Chaos,Ramlethal,7,28.57,71.43,-3
-Happy Chaos,Nagoriyuki,5,0.00,100.00,-3
-Happy Chaos,Ino,5,60.00,40.00,+3
-Happy Chaos,Giovanna,5,80.00,20.00,+3
-Baiken,Sol Badguy,10,40.00,60.00,-3
-Baiken,May,6,33.33,66.67,-3
-Baiken,Axl Low,3,66.67,33.33,+3
-Baiken,Chipp,27,51.85,48.15,+1
-Baiken,Faust,13,46.15,53.85,-2
-Baiken,Millia,7,0.00,100.00,-3
-Baiken,Zato=1,3,33.33,66.67,-3
-Baiken,Ramlethal,17,35.29,64.71,-3
-Baiken,Leo Whitefang,3,33.33,66.67,-3
-Baiken,Anji Mito,13,23.08,76.92,-3
-Baiken,Giovanna,6,16.67,83.33,-3
-Baiken,Testament,1,0.00,100.00,-3
-Baiken,Brisket,6,0.00,100.00,-3
-Baiken,Sin Kiske,3,0.00,100.00,-3
-Testament,Sol Badguy,13,46.15,53.85,-2
-Testament,May,19,73.68,26.32,+3
-Testament,Axl Low,4,75.00,25.00,+3
-Testament,Chipp,10,70.00,30.00,+3
-Testament,Faust,3,33.33,66.67,-3
-Testament,Millia,3,100.00,0.00,+3
-Testament,Zato=1,8,75.00,25.00,+3
-Testament,Ramlethal,21,61.90,38.10,+3
-Testament,Nagoriyuki,6,33.33,66.67,-3
-Testament,Anji Mito,5,100.00,0.00,+3
-Testament,Giovanna,3,100.00,0.00,+3
-Brisket,Sol Badguy,1,100.00,0.00,+3
-Brisket,May,1,0.00,100.00,-3
-Brisket,Axl Low,2,100.00,0.00,+3
-Brisket,Chipp,5,60.00,40.00,+3
-Brisket,Faust,6,33.33,66.67,-3
-Brisket,Millia,9,77.78,22.22,+3
-Brisket,Zato=1,7,57.14,42.86,+3
-Brisket,Ramlethal,1,100.00,0.00,+3
-Brisket,Nagoriyuki,3,33.33,66.67,-3
-Brisket,Anji Mito,10,60.00,40.00,+3
-Brisket,Giovanna,3,66.67,33.33,+3
-Brisket,Baiken,3,100.00,0.00,+3
-Brisket,Testament,1,0.00,100.00,-3
-Brisket,Sin Kiske,3,66.67,33.33,+3
-Sin Kiske,Sol Badguy,30,60.00,40.00,+3
-Sin Kiske,Ky Kiske,6,33.33,66.67,-3
-Sin Kiske,May,9,66.67,33.33,+3
-Sin Kiske,Axl Low,2,0.00,100.00,-3
-Sin Kiske,Chipp,21,90.48,9.52,+3
-Sin Kiske,Potemkin,6,50.00,50.00,0
-Sin Kiske,Faust,3,66.67,33.33,+3
-Sin Kiske,Millia,19,57.89,42.11,+3
-Sin Kiske,Zato=1,15,66.67,33.33,+3
-Sin Kiske,Ramlethal,20,45.00,55.00,-2
-Sin Kiske,Leo Whitefang,3,66.67,33.33,+3
-Sin Kiske,Nagoriyuki,16,75.00,25.00,+3
-Sin Kiske,Anji Mito,27,40.74,59.26,-3
-Sin Kiske,Ino,5,60.00,40.00,+3
-Sin Kiske,Giovanna,3,0.00,100.00,-3
-Sin Kiske,Testament,12,58.33,41.67,+3
-Sin Kiske,Brisket,4,100.00,0.00,+3
+SO,KY,10,40.00,60.00,-3
+SO,MA,11,9.09,90.91,-3
+SO,AX,6,0.00,100.00,-3
+SO,CH,11,63.64,36.36,+3
+SO,PO,5,40.00,60.00,-3
+SO,FA,17,23.53,76.47,-3
+SO,MI,7,28.57,71.43,-3
+SO,ZA,3,0.00,100.00,-3
+SO,RA,15,40.00,60.00,-3
+SO,NA,12,33.33,66.67,-3
+SO,GI,16,87.50,12.50,+3
+SO,AN,3,66.67,33.33,+3
+SO,JC,2,100.00,0.00,+3
+SO,HA,3,66.67,33.33,+3
+SO,BA,9,44.44,55.56,-3
+SO,BI,6,33.33,66.67,-3
+SO,SI,3,33.33,66.67,-3
+KY,SO,4,50.00,50.00,0
+KY,MA,6,66.67,33.33,+3
+KY,AX,6,83.33,16.67,+3
+KY,CH,10,100.00,0.00,+3
+KY,PO,1,100.00,0.00,+3
+KY,FA,6,16.67,83.33,-3
+KY,MI,16,75.00,25.00,+3
+KY,ZA,13,61.54,38.46,+3
+KY,RA,17,58.82,41.18,+3
+KY,NA,6,33.33,66.67,-3
+KY,GI,10,40.00,60.00,-3
+KY,IN,6,83.33,16.67,+3
+KY,JC,1,100.00,0.00,+3
+KY,HA,11,72.73,27.27,+3
+KY,BI,11,72.73,27.27,+3
+KY,SI,2,100.00,0.00,+3
+MA,SO,8,75.00,25.00,+3
+MA,KY,16,43.75,56.25,-3
+MA,AX,3,66.67,33.33,+3
+MA,CH,4,50.00,50.00,0
+MA,PO,4,25.00,75.00,-3
+MA,FA,8,62.50,37.50,+3
+MA,MI,9,66.67,33.33,+3
+MA,RA,20,75.00,25.00,+3
+MA,NA,3,0.00,100.00,-3
+MA,GI,3,66.67,33.33,+3
+MA,IN,4,75.00,25.00,+3
+MA,HA,15,73.33,26.67,+3
+MA,BA,3,33.33,66.67,-3
+MA,TE,1,0.00,100.00,-3
+MA,BI,10,70.00,30.00,+3
+AX,SO,6,16.67,83.33,-3
+AX,KY,3,0.00,100.00,-3
+AX,MA,3,100.00,0.00,+3
+AX,CH,19,68.42,31.58,+3
+AX,PO,2,100.00,0.00,+3
+AX,FA,7,85.71,14.29,+3
+AX,MI,7,42.86,57.14,-3
+AX,ZA,13,46.15,53.85,-2
+AX,RA,19,68.42,31.58,+3
+AX,NA,3,66.67,33.33,+3
+AX,GI,3,0.00,100.00,-3
+AX,AN,1,100.00,0.00,+3
+AX,IN,2,0.00,100.00,-3
+AX,JC,1,100.00,0.00,+3
+AX,BA,3,100.00,0.00,+3
+AX,TE,6,50.00,50.00,0
+AX,BI,3,0.00,100.00,-3
+AX,SI,1,0.00,100.00,-3
+CH,SO,11,18.18,81.82,-3
+CH,KY,14,50.00,50.00,0
+CH,MA,13,0.00,100.00,-3
+CH,AX,3,0.00,100.00,-3
+CH,PO,5,60.00,40.00,+3
+CH,FA,4,50.00,50.00,0
+CH,MI,23,52.17,47.83,+1
+CH,ZA,7,71.43,28.57,+3
+CH,RA,19,21.05,78.95,-3
+CH,LE,8,75.00,25.00,+3
+CH,NA,17,11.76,88.24,-3
+CH,GI,25,20.00,80.00,-3
+CH,AN,3,33.33,66.67,-3
+CH,IN,10,50.00,50.00,0
+CH,JC,1,100.00,0.00,+3
+CH,HA,10,60.00,40.00,+3
+CH,BA,3,100.00,0.00,+3
+CH,TE,6,50.00,50.00,0
+CH,BI,20,20.00,80.00,-3
+CH,SI,5,80.00,20.00,+3
+PO,SO,6,100.00,0.00,+3
+PO,KY,3,66.67,33.33,+3
+PO,CH,12,25.00,75.00,-3
+PO,MI,2,100.00,0.00,+3
+PO,ZA,4,100.00,0.00,+3
+PO,RA,10,60.00,40.00,+3
+PO,LE,4,50.00,50.00,0
+PO,NA,3,33.33,66.67,-3
+PO,GI,2,0.00,100.00,-3
+PO,JC,3,33.33,66.67,-3
+PO,HA,3,66.67,33.33,+3
+PO,BI,2,0.00,100.00,-3
+PO,SI,2,50.00,50.00,0
+FA,SO,6,33.33,66.67,-3
+FA,KY,10,70.00,30.00,+3
+FA,AX,2,100.00,0.00,+3
+FA,MI,4,50.00,50.00,0
+FA,ZA,16,50.00,50.00,0
+FA,RA,22,40.91,59.09,-3
+FA,NA,3,33.33,66.67,-3
+FA,GI,2,100.00,0.00,+3
+FA,AN,10,90.00,10.00,+3
+FA,IN,5,40.00,60.00,-3
+FA,HA,2,100.00,0.00,+3
+FA,TE,2,100.00,0.00,+3
+FA,BI,3,66.67,33.33,+3
+FA,SI,5,40.00,60.00,-3
+MI,SO,1,100.00,0.00,+3
+MI,MA,22,45.45,54.55,-2
+MI,AX,20,45.00,55.00,-2
+MI,CH,27,40.74,59.26,-3
+MI,PO,10,60.00,40.00,+3
+MI,FA,9,0.00,100.00,-3
+MI,ZA,6,33.33,66.67,-3
+MI,RA,30,20.00,80.00,-3
+MI,LE,3,33.33,66.67,-3
+MI,NA,5,0.00,100.00,-3
+MI,GI,8,62.50,37.50,+3
+MI,AN,7,14.29,85.71,-3
+MI,IN,11,27.27,72.73,-3
+MI,GO,3,33.33,66.67,-3
+MI,JC,13,53.85,46.15,+2
+MI,HA,10,70.00,30.00,+3
+MI,BA,6,33.33,66.67,-3
+MI,TE,5,20.00,80.00,-3
+MI,BI,6,50.00,50.00,0
+ZA,SO,3,100.00,0.00,+3
+ZA,KY,8,87.50,12.50,+3
+ZA,MA,3,66.67,33.33,+3
+ZA,AX,6,16.67,83.33,-3
+ZA,CH,13,46.15,53.85,-2
+ZA,FA,5,60.00,40.00,+3
+ZA,MI,2,100.00,0.00,+3
+ZA,RA,11,36.36,63.64,-3
+ZA,NA,12,25.00,75.00,-3
+ZA,GI,13,23.08,76.92,-3
+ZA,AN,3,0.00,100.00,-3
+ZA,IN,2,100.00,0.00,+3
+ZA,JC,6,33.33,66.67,-3
+ZA,HA,3,100.00,0.00,+3
+ZA,BA,1,100.00,0.00,+3
+ZA,TE,3,33.33,66.67,-3
+ZA,BI,1,100.00,0.00,+3
+RA,SO,11,36.36,63.64,-3
+RA,KY,12,83.33,16.67,+3
+RA,MA,12,25.00,75.00,-3
+RA,AX,5,80.00,20.00,+3
+RA,CH,11,90.91,9.09,+3
+RA,PO,8,25.00,75.00,-3
+RA,FA,35,57.14,42.86,+3
+RA,MI,12,41.67,58.33,-3
+RA,ZA,17,58.82,41.18,+3
+RA,LE,11,63.64,36.36,+3
+RA,NA,10,70.00,30.00,+3
+RA,GI,17,70.59,29.41,+3
+RA,AN,8,25.00,75.00,-3
+RA,IN,17,47.06,52.94,-2
+RA,JC,4,50.00,50.00,0
+RA,HA,9,66.67,33.33,+3
+RA,BA,2,0.00,100.00,-3
+RA,TE,8,62.50,37.50,+3
+RA,BI,30,60.00,40.00,+3
+RA,SI,5,20.00,80.00,-3
+LE,KY,3,33.33,66.67,-3
+LE,MA,8,12.50,87.50,-3
+LE,AX,6,0.00,100.00,-3
+LE,CH,6,50.00,50.00,0
+LE,PO,2,50.00,50.00,0
+LE,FA,1,100.00,0.00,+3
+LE,MI,5,80.00,20.00,+3
+LE,ZA,4,25.00,75.00,-3
+LE,RA,4,50.00,50.00,0
+LE,NA,6,16.67,83.33,-3
+LE,GI,18,38.89,61.11,-3
+LE,AN,2,100.00,0.00,+3
+LE,IN,2,50.00,50.00,0
+LE,HA,6,66.67,33.33,+3
+LE,BI,7,28.57,71.43,-3
+LE,SI,1,0.00,100.00,-3
+NA,SO,14,14.29,85.71,-3
+NA,KY,9,11.11,88.89,-3
+NA,AX,3,100.00,0.00,+3
+NA,CH,22,86.36,13.64,+3
+NA,FA,5,60.00,40.00,+3
+NA,MI,7,57.14,42.86,+3
+NA,ZA,5,100.00,0.00,+3
+NA,RA,34,67.65,32.35,+3
+NA,LE,10,40.00,60.00,-3
+NA,GI,30,73.33,26.67,+3
+NA,AN,1,100.00,0.00,+3
+NA,IN,16,68.75,31.25,+3
+NA,JC,3,0.00,100.00,-3
+NA,HA,3,100.00,0.00,+3
+NA,BA,6,50.00,50.00,0
+NA,TE,4,25.00,75.00,-3
+NA,BI,20,65.00,35.00,+3
+NA,SI,4,75.00,25.00,+3
+GI,SO,28,25.00,75.00,-3
+GI,KY,7,42.86,57.14,-3
+GI,MA,14,57.14,42.86,+3
+GI,AX,9,55.56,44.44,+3
+GI,CH,20,55.00,45.00,+2
+GI,PO,8,37.50,62.50,-3
+GI,FA,9,44.44,55.56,-3
+GI,MI,14,100.00,0.00,+3
+GI,ZA,23,43.48,56.52,-3
+GI,RA,45,64.44,35.56,+3
+GI,LE,9,77.78,22.22,+3
+GI,NA,36,38.89,61.11,-3
+GI,AN,1,100.00,0.00,+3
+GI,IN,3,33.33,66.67,-3
+GI,HA,6,100.00,0.00,+3
+GI,BA,18,44.44,55.56,-3
+GI,TE,13,76.92,23.08,+3
+GI,BI,20,45.00,55.00,-2
+AN,SO,3,0.00,100.00,-3
+AN,KY,3,0.00,100.00,-3
+AN,MA,1,0.00,100.00,-3
+AN,AX,6,66.67,33.33,+3
+AN,CH,17,70.59,29.41,+3
+AN,FA,3,0.00,100.00,-3
+AN,MI,1,100.00,0.00,+3
+AN,ZA,4,100.00,0.00,+3
+AN,LE,2,50.00,50.00,0
+AN,NA,9,0.00,100.00,-3
+AN,GI,2,0.00,100.00,-3
+AN,IN,5,20.00,80.00,-3
+AN,JC,3,0.00,100.00,-3
+AN,HA,4,50.00,50.00,0
+AN,SI,1,0.00,100.00,-3
+IN,SO,3,66.67,33.33,+3
+IN,MA,20,45.00,55.00,-2
+IN,AX,6,66.67,33.33,+3
+IN,CH,9,77.78,22.22,+3
+IN,PO,1,0.00,100.00,-3
+IN,FA,4,75.00,25.00,+3
+IN,MI,3,100.00,0.00,+3
+IN,ZA,4,50.00,50.00,0
+IN,RA,19,47.37,52.63,-2
+IN,LE,5,40.00,60.00,-3
+IN,GI,18,50.00,50.00,0
+IN,AN,6,66.67,33.33,+3
+IN,JC,3,100.00,0.00,+3
+IN,HA,9,22.22,77.78,-3
+IN,TE,4,50.00,50.00,0
+IN,BI,4,50.00,50.00,0
+GO,CH,2,100.00,0.00,+3
+GO,MI,5,100.00,0.00,+3
+GO,GI,3,33.33,66.67,-3
+JC,SO,6,66.67,33.33,+3
+JC,KY,11,72.73,27.27,+3
+JC,MA,3,0.00,100.00,-3
+JC,AX,3,33.33,66.67,-3
+JC,CH,6,50.00,50.00,0
+JC,PO,3,100.00,0.00,+3
+JC,FA,3,33.33,66.67,-3
+JC,MI,3,100.00,0.00,+3
+JC,ZA,1,100.00,0.00,+3
+JC,RA,7,28.57,71.43,-3
+JC,NA,5,0.00,100.00,-3
+JC,AN,5,60.00,40.00,+3
+JC,IN,5,80.00,20.00,+3
+HA,SO,10,40.00,60.00,-3
+HA,MA,6,33.33,66.67,-3
+HA,AX,3,66.67,33.33,+3
+HA,CH,27,51.85,48.15,+1
+HA,FA,13,46.15,53.85,-2
+HA,MI,7,0.00,100.00,-3
+HA,ZA,3,33.33,66.67,-3
+HA,RA,17,35.29,64.71,-3
+HA,LE,3,33.33,66.67,-3
+HA,GI,13,23.08,76.92,-3
+HA,IN,6,16.67,83.33,-3
+HA,BA,1,0.00,100.00,-3
+HA,TE,6,0.00,100.00,-3
+HA,BI,3,0.00,100.00,-3
+HA,SI,4,0.00,100.00,-3
+BA,SO,13,46.15,53.85,-2
+BA,MA,19,73.68,26.32,+3
+BA,AX,4,75.00,25.00,+3
+BA,CH,10,70.00,30.00,+3
+BA,FA,3,33.33,66.67,-3
+BA,MI,3,100.00,0.00,+3
+BA,ZA,8,75.00,25.00,+3
+BA,RA,21,61.90,38.10,+3
+BA,NA,6,33.33,66.67,-3
+BA,GI,5,100.00,0.00,+3
+BA,IN,3,100.00,0.00,+3
+TE,SO,1,100.00,0.00,+3
+TE,MA,1,0.00,100.00,-3
+TE,AX,2,100.00,0.00,+3
+TE,CH,5,60.00,40.00,+3
+TE,FA,6,33.33,66.67,-3
+TE,MI,9,77.78,22.22,+3
+TE,ZA,7,57.14,42.86,+3
+TE,RA,1,100.00,0.00,+3
+TE,NA,3,33.33,66.67,-3
+TE,GI,10,60.00,40.00,+3
+TE,IN,3,66.67,33.33,+3
+TE,HA,3,100.00,0.00,+3
+TE,BA,1,0.00,100.00,-3
+TE,BI,3,66.67,33.33,+3
+BI,SO,30,60.00,40.00,+3
+BI,KY,6,33.33,66.67,-3
+BI,MA,9,66.67,33.33,+3
+BI,AX,2,0.00,100.00,-3
+BI,CH,21,90.48,9.52,+3
+BI,PO,6,50.00,50.00,0
+BI,FA,3,66.67,33.33,+3
+BI,MI,19,57.89,42.11,+3
+BI,ZA,15,66.67,33.33,+3
+BI,RA,20,45.00,55.00,-2
+BI,LE,3,66.67,33.33,+3
+BI,NA,16,75.00,25.00,+3
+BI,GI,27,40.74,59.26,-3
+BI,AN,5,60.00,40.00,+3
+BI,IN,3,0.00,100.00,-3
+BI,BA,12,58.33,41.67,+3
+BI,TE,4,100.00,0.00,+3
+BI,SI,4,25.00,75.00,-3
+SI,CH,5,60.00,40.00,+3
+SI,MI,5,60.00,40.00,+3
+SI,ZA,7,57.14,42.86,+3
+SI,RA,7,28.57,71.43,-3
+SI,AN,4,25.00,75.00,-3
+SI,IN,5,20.00,80.00,-3
+SI,JC,3,100.00,0.00,+3
+SI,BA,1,0.00,100.00,-3
+SI,BI,1,100.00,0.00,+3

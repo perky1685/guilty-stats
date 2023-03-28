@@ -43,7 +43,7 @@ def write_all_matchups():
             player1_char, 
             player2_char
     """
-    chars_long = ("Sol Badguy", "Ky Kiske", "May", "Axl Low", "Chipp", "Potemkin", "Faust", "Millia", "Zato=1", "Ramlethal", "Leo Whitefang", "Nagoriyuki", "Anji Mito", "Ino", "Giovanna", "Jack-O", "Happy Chaos", "Baiken", "Testament", "Brisket", "Sin Kiske")
+    chars_short = ("SO","KY","MA","AX","CH","PO","FA","MI","ZA","RA","LE","NA","GI","AN","IN","GO","JC","HA","BA","TE","BI","SI")
     # Execute the query and fetch the results
     with conn.cursor() as cur:
         cur.execute(query)
@@ -73,7 +73,7 @@ def write_all_matchups():
                 else:
                     score = "0"
                 try:
-                    writer.writerow([chars_long[player1_char], chars_long[player2_char], num_matches, player1_win_rate, player2_win_rate, score])
+                    writer.writerow([chars_short[player1_char], chars_short[player2_char], num_matches, player1_win_rate, player2_win_rate, score])
                 except:
                     pass
 
@@ -125,7 +125,7 @@ def matchup_by_floor(floor):
         player2_char, 
         floor 
         """
-    chars_long = ("Sol Badguy", "Ky Kiske", "May", "Axl Low", "Chipp", "Potemkin", "Faust", "Millia", "Zato=1", "Ramlethal", "Leo Whitefang", "Nagoriyuki", "Anji Mito", "Ino", "Giovanna", "Jack-O", "Happy Chaos", "Baiken", "Testament", "Brisket", "Sin Kiske")
+    chars_short = ("SO","KY","MA","AX","CH","PO","FA","MI","ZA","RA","LE","NA","GI","AN","IN","GO","JC","HA","BA","TE","BI","SI")
 
     # Execute the query and fetch the results
     with conn.cursor() as cur:
@@ -157,7 +157,7 @@ def matchup_by_floor(floor):
                     else:
                         score = "0"
                     try:
-                        writer.writerow([chars_long[player1_char], chars_long[player2_char], num_matches, player1_win_rate, player2_win_rate, score])
+                        writer.writerow([chars_short[player1_char], chars_short[player2_char], num_matches, player1_win_rate, player2_win_rate, score])
                     except:
                         pass
 
